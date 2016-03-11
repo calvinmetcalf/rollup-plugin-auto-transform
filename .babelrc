@@ -1,0 +1,3 @@
+{
+	"presets": [ "async-to-bluebird", "es2015-rollup" ]
+}
