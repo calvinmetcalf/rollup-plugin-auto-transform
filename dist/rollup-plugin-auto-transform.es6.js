@@ -8,7 +8,7 @@ import _nodeResolve from 'resolve';
 import 'babel-polyfill';
 
 var getPackageDir = function () {
-  var ref = coroutine(regeneratorRuntime.mark(function _callee(id, filter, cache) {
+  var _ref = coroutine(regeneratorRuntime.mark(function _callee(id, filter, cache) {
     var dir, dirs, out, files, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, _dir;
 
     return regeneratorRuntime.wrap(function _callee$(_context) {
@@ -117,12 +117,12 @@ var getPackageDir = function () {
   }));
 
   return function getPackageDir(_x, _x2, _x3) {
-    return ref.apply(this, arguments);
+    return _ref.apply(this, arguments);
   };
 }();
 
 var getPackage = function () {
-  var ref = coroutine(regeneratorRuntime.mark(function _callee2(dir, cache) {
+  var _ref2 = coroutine(regeneratorRuntime.mark(function _callee2(dir, cache) {
     var pack, out;
     return regeneratorRuntime.wrap(function _callee2$(_context2) {
       while (1) {
@@ -163,12 +163,12 @@ var getPackage = function () {
   }));
 
   return function getPackage(_x4, _x5) {
-    return ref.apply(this, arguments);
+    return _ref2.apply(this, arguments);
   };
 }();
 
 var loadTransforms = function () {
-  var ref = coroutine(regeneratorRuntime.mark(function _callee5(transforms, baseDir) {
+  var _ref3 = coroutine(regeneratorRuntime.mark(function _callee5(transforms, baseDir) {
     var _this = this;
 
     var out, _iteratorNormalCompletion2, _didIteratorError2, _iteratorError2, _loop, _iterator2, _step2;
@@ -318,7 +318,7 @@ var loadTransforms = function () {
   }));
 
   return function loadTransforms(_x6, _x7) {
-    return ref.apply(this, arguments);
+    return _ref3.apply(this, arguments);
   };
 }();
 
@@ -388,7 +388,7 @@ var index = (function () {
   var dirCache = new Map();
   return {
     transform: function () {
-      var ref = coroutine(regeneratorRuntime.mark(function _callee6(code, id) {
+      var _ref4 = coroutine(regeneratorRuntime.mark(function _callee6(code, id) {
         var packDir, pack, transforms, _iteratorNormalCompletion3, _didIteratorError3, _iteratorError3, _iterator3, _step3, trans, tempCode;
 
         return regeneratorRuntime.wrap(function _callee6$(_context7) {
@@ -519,12 +519,12 @@ var index = (function () {
       }));
 
       function transform(_x9, _x10) {
-        return ref.apply(this, arguments);
+        return _ref4.apply(this, arguments);
       }
 
       return transform;
     }()
   };
-})
+});
 
 export default index;

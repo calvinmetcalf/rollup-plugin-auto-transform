@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-auto-transform",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/rollup-plugin-auto-transform.cjs.js",
   "jsnext:main": "dist/rollup-plugin-auto-transform.es6.js",
@@ -8,7 +8,8 @@
     "test": "mocha",
     "pretest": "npm run build",
     "build": "rollup -c -f cjs -o dist/rollup-plugin-auto-transform.cjs.js && rollup -c -f es6 -o dist/rollup-plugin-auto-transform.es6.js",
-    "prebuild": "rm -rf dist && mkdir dist"
+    "prebuild": "rm -rf dist && mkdir dist",
+     "prepublish": "npm test"
   },
   "keywords": [
     "rollup-plugin"
@@ -39,5 +40,9 @@
     "rollup-pluginutils": "^1.3.1",
     "babel-polyfill": "^6.7.2",
     "bluebird": "^3.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:calvinmetcalf/rollup-plugin-auto-transform.git"
   }
 }
